@@ -38,7 +38,7 @@ class QOSM(QWebEngineView):
     markerRightClicked = pyqtSignal(str, float, float)
 
     def __init__(self, parent):
-        super(qOSM, self).__init__(parent)
+        super(QOSM, self).__init__(parent)
         self.manager = QNetworkAccessManager()
         self.cache = QNetworkDiskCache()
         self.cache.setCacheDirectory("cache")
